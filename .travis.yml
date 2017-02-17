@@ -6,8 +6,6 @@ rust:
   - stable
 
 script:
+  - cargo build
   - cargo test
   - cargo test --features="elcapitan"
-
-notifications:
-  webhooks: http://build.servo.org:54856/travis
